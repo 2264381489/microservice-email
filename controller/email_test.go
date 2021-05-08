@@ -12,7 +12,7 @@ import (
 func TestEmailHandler(t *testing.T) {
 	client := http.DefaultClient
 	data := map[string]string{
-		"toUser":   "chenhb67@chinaunicom.cn",
+		"toUser":   "yanzezhong@outlook.com",
 		"userName": "无意",
 	}
 	buffer, err := json.Marshal(data)
@@ -20,6 +20,7 @@ func TestEmailHandler(t *testing.T) {
 		t.Logf("msrshal fail, err:%v\n", err)
 	}
 	body := bytes.NewBuffer(buffer)
+	// 掉接口
 	response, err := client.Post("http://127.0.0.1:9000/email", "application/json", body)
 	if err != nil {
 		t.Logf("post fail, err:%v\n", err)

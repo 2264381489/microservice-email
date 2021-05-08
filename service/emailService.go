@@ -13,8 +13,8 @@ import (
 
 var (
 	r          *rand.Rand
-	fromUser   = "1094124771@qq.com" // 填写自己的邮箱
-	password   = ""                  // 填写授权码
+	fromUser   = "yanzezhong_2021@qq.com" // 填写自己的邮箱
+	password   = "gtcezgztlcfnbhcd"                  // 填写授权码
 	host       = "smtp.qq.com"
 	activeCode = ""
 )
